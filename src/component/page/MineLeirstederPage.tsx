@@ -12,10 +12,10 @@ export const MineLeirstederPage = (): React.ReactElement => {
 
     return (
         <div>
-            <p>
+            <p className="text-sm text-slate-700 py-6">
                 Her kommer det etterhvert informasjon om gode leirsteder.
             </p>
-            <h5>{leirsted.navn}</h5>
+            <h5 className="mt-1 text-lg font-semibold">{leirsted.navn}</h5>
                 <p>Beskrivelse: {leirsted.beskrivelse}</p>
                 <p>Koordinater: {leirsted.koordinater}</p>
                 <p>Egnet for telt: {leirsted.egnetForTelt ? 'Ja' : 'Nei'}</p>
