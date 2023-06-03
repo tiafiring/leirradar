@@ -1,3 +1,4 @@
+import React from "react";
 import { MineLeirstederPage } from "./component/page/MineLeirstederPage";
 import LagreLeirsted from "./component/page/LagreLeirsted";
 

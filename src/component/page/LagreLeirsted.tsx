@@ -1,4 +1,5 @@
 import { useForm, SubmitHandler } from "react-hook-form";
+import React from "react";
 
 type LeirstedInputs = {
   navn: string;
@@ -19,39 +20,39 @@ export default function LagreLeirsted() {
   return (
     <div>
       <h4 className="mt-1 text-lg font-semibold">Lagre leirsted</h4>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <label className="px-2 flex flex-col mt-4">
           Navn
           <input
-            className="mt-4 text-slate-500 border w-15"
+            className="text-slate-500 border w-15"
             {...register("navn", { required: true })}
           />
         </label>
         <label className="px-2 flex flex-col mt-4">
           Beskrivelse
           <input
-            className="mt-4 text-slate-500 border w-15"
+            className="text-slate-500 border w-15"
             {...register("beskrivelse", { required: true })}
           />
         </label>
         <label className="px-2 flex flex-col mt-4">
           Koordinater
           <input
-            className="mt-4 text-slate-500 border w-15"
+            className="text-slate-500 border w-15"
             {...register("koordinater", { required: true })}
           />
         </label>
         <label className="px-2 flex flex-col mt-4">
           Egnet for telt
           <input
-            className="mt-4 text-slate-500 border w-15"
+            className="text-slate-500 border w-15"
             {...register("egnetForTelt", { required: true })}
           />
         </label>
         <label className="px-2 flex flex-col mt-4">
           Egnet for hengekøye
           <input
-            className="mt-4 text-slate-500 border w-15"
+            className="text-slate-500 border w-15"
             {...register("egnetForHengekoye", { required: true })}
           />
         </label>
